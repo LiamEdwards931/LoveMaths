@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Maths</title>
+    <!--Stylesheet-->
     <link href="assets/css/style.css" rel='stylesheet'>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--GoogleFonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 </head>
+
 <body>
-    
-    <script src = "assets/javascript/script.js"></script>
+    <!--logo for love Maths-->
+    <h1 class="heading">
+        <img class="logo" src="assets/images/loveMathslogo.png" alt="Love maths heart logo"> Love Maths
+        <div id="game-area">
+            <!--Game Controls-->
+            <div class="controls-area">
+                <button class="btn btn--big btn--green">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <button class="btn btn--big btn--blue">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="btn btn--big btn--orange">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="btn btn--big btn--red">
+                    <i class="fas fa-divide"></i>
+                </button>
+            </div>
+            <!--Question Area-->
+            <div class="question-area">
+                <span id="operand1">0</span>
+                <span id="operator">x</span>
+                <span id="operand2">0</span>
+                <span>=</span>
+                <p class="answer-message">Enter Answer:</p>
+                <input id="answer-box" type="number">
+
+            </div>
+            <button id="btn btn--grey" type="submit">Submit Answer</button>
+        </div>
+
+        <!--scoring Div-->
+        <div class="score-area">
+            <p class="scores">Correct Answers<span id="score">0</span></p>
+            <p class="scores">Incorrect Answers<span id="incorrect">0</span></p>
+        </div>
+
+
+
+
+        <!--JavaScript Link-->
+        <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
